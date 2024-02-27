@@ -11,6 +11,9 @@ class Array{
 				sL=l;
 				l=arr[i];
 			}
+			else if(arr[i]<l && arr[i]>sL){
+				sL=arr[i];
+			}
 		}
 		return sL;
 	}
@@ -18,7 +21,7 @@ class Array{
 class Run{
 	public static void main(String[] args){
 		Array a=new Array();
-		int arr[]={1,5,47,8,2,3,99,44};
+		int arr[]={1,5,47,8,2,3,99,49};
 		System.out.println(a.SecondLargest(arr));
 	}
 }
